@@ -1,8 +1,8 @@
 # 🩺 Health Risk Predictor 
 
-A comprehensive machine learning application designed to assess the risk of multiple health conditions, including **Heart Disease**
+A comprehensive machine learning application designed to assess the risk of **Heart Disease**
 
-This repository features an ultra-premium glassmorphic React (Vite) frontend and a highly efficient Flask API backend that serves specialized `scikit-learn` Random Forest classifiers.
+This repository features an glassmorphic React (Vite) frontend and a highly efficient Flask API backend that serves specialized `scikit-learn` Random Forest classifiers.
 
 ---
 
