@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Risk Predictor</title>
+</head>
+<body>
+
+    <h2>Health Risk Prediction</h2>
+
+    <form action="/predict" method="post">
+
+        Age: <input type="number" name="age" required><br><br>
+
+        Smoking (1 = Yes, 0 = No):
+        <input type="number" name="smoking" min="0" max="1" required><br><br>
+
+        Alcohol (drinks per week):
+        <input type="number" name="alcohol" required><br><br>
+
+        BMI:
+        <input type="number" name="bmi" required><br><br>
+
+        Physical Activity (1 = Active, 0 = Not):
+        <input type="number" name="activity" min="0" max="1" required><br><br>
+
+        General Health (1 = Good, 0 = Poor):
+        <input type="number" name="health" min="0" max="1" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
