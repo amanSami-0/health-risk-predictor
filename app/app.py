@@ -7,18 +7,17 @@ app = Flask(__name__)
 CORS(app)
 
 
-# 🔥 Load model + scaler
 model = pickle.load(open('../model/model.pkl', 'rb'))
 scaler = pickle.load(open('../model/scaler.pkl', 'rb'))
 
 
-# ✅ Test route
+
 @app.route('/')
 def home():
     return "Heart Risk API running ✅"
 
 
-# 🔥 Prediction route
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
